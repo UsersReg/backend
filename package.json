@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "dev": "tsx watch --ignore ./node_modules src/server.ts",
+    "build": "tsc --build",
+    "start": "node ./build/server.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0",
+    "tsc": "^2.0.4",
+    "tsx": "^3.12.7",
+    "zod": "^3.21.4"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend of Users Registration Application",
+  "main": "src/server.ts",
+  "repository": "https://github.com/UsersReg/backend.git",
+  "author": "Anthony Victor <thonnyvrc@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
