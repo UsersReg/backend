@@ -24,13 +24,13 @@ npm run dev || yarn dev
 ---
 `POST` /users
 > **Create a new user in database.**
-> You need to specify `name`, and `email` and `password` in request body this way:
+> You need to specify `name`, and `email` and encoded `password` in request body this way:
 ```json
 {
     "data": {
         "name": "User Name Example",
         "email": "useremail@example.com",
-        "password": "Encrypted User Password",
+        "password": "Encoded User Password",
     }
 }
 ```

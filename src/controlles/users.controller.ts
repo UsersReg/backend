@@ -54,7 +54,7 @@ export class UsersController extends BaseController<IUser> {
   async put(req: IRequest, res: IResponse): Promise<void> {
     try {
       const { id } = req.params as { id: string };
-      const { data } = req.body as { data: any };
+      const { data } = req.body as { data: IUsersUpdateDTO };
       const result = await this.service.update({ id, data });
       res.status(200).send(result);
     } catch (err) {
