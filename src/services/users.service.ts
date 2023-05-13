@@ -17,7 +17,7 @@ export class UsersService extends BaseService<IUser> {
         .min(2, "User name must be at least 2 characters"),
       email: z
         .string({ required_error: "Email is required" })
-        .min(7, "Email is must be at least 7 characters!")
+        .min(7, "Email must be at least 7 characters!")
         .email("Email not valid")
         .refine(async (e) => {
           const usersEmails = (await this.read({})).map((user) => user.email);
