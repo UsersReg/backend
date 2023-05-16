@@ -47,6 +47,10 @@ npm run dev || yarn dev
 > This route expects a `id` as parameter.
 ---
 
+## Security
+For security reasons, send encoded passwords only.
+This application encrypts passwords with `bcrypt`. 
+
 ## Contributors
 
 <a href="https://github.com/UsersReg/backend/graphs/contributors"><img src="https://contrib.rocks/image?repo=UsersReg/backend" /></a>
